@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 
 import static org.launchcode.techjobs.mvc.controllers.ListController.columnChoices;
-import static org.launchcode.techjobs.mvc.controllers.ListController.tableChoices;
 
 
 /**
@@ -42,14 +41,6 @@ public class SearchController {
             model.addAttribute("columns", columnChoices);
             return "search";
         }
-
-
-//model.addAttribute(ListController.columnChoices.get(searchType));
-//        model.addAttribute(ListController.tableChoices.get(category.value()));
-//        model.addAttribute("searchTerm", tableChoices);
-//        model.addAttribute("beep", JobData.findByColumnAndValue(searchType, searchTerm));
-
- //       return "search";
    }
 
 }
